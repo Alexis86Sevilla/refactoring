@@ -1,6 +1,6 @@
-package com.kreitek.refactor.mal;
+package com.kreitek.refactor.validators;
 
-public interface DNIinterface {
+public interface ValidatorsInterface {
 
     void validate();
 

@@ -1,8 +1,8 @@
-package com.kreitek.refactor.mal;
+package com.kreitek.refactor.validators;
 
 import java.util.Date;
 
-public class ValidateDNI implements DNIinterface{
+public class ValidateDNI implements ValidatorsInterface {
 
     private String numDNI;
     private Date fchValidez;
@@ -12,6 +12,7 @@ public class ValidateDNI implements DNIinterface{
         this.fchValidez = fchValidez;
     }
 
+    @Override
     public void validate(){
         String dniChars="TRWAGMYFPDXBNJZSQVHLCKE";
         String intPartDNI = this.numDNI.trim().replaceAll(" ", "").substring(0, 8);

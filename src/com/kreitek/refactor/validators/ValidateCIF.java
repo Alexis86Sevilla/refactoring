@@ -1,10 +1,10 @@
-package com.kreitek.refactor.mal;
+package com.kreitek.refactor.validators;
 
 import java.util.Date;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class ValidateCIF implements DNIinterface {
+public class ValidateCIF implements ValidatorsInterface {
 
     public String numCIF;
     public Date fchValidez;
@@ -20,6 +20,7 @@ public class ValidateCIF implements DNIinterface {
         ultimoCar = cifUP.charAt(cifUP.length() - 1);
     }
 
+    @Override
     public void validate() {
 
         if (checkPattern()){

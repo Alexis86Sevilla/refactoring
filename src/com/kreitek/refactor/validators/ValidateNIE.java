@@ -1,8 +1,8 @@
-package com.kreitek.refactor.mal;
+package com.kreitek.refactor.validators;
 
 import java.util.Date;
 
-public class ValidateNIE implements DNIinterface {
+public class ValidateNIE implements ValidatorsInterface {
 
     private String numNIE;
     private Date fchValidez;
@@ -15,6 +15,7 @@ public class ValidateNIE implements DNIinterface {
         this.fchValidez = fchValidez;
     }
 
+    @Override
     public void validate() {
         if (SearchWrongsCharacters()) {
             replaceLetterWithNumber();

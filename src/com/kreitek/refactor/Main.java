@@ -1,5 +1,6 @@
-package com.kreitek.refactor.mal;
+package com.kreitek.refactor;
 
+import com.kreitek.refactor.printers.PrintBanner;
 import com.kreitek.refactor.validators.ValidateCIF;
 import com.kreitek.refactor.validators.ValidateDNI;
 import com.kreitek.refactor.validators.ValidateNIE;

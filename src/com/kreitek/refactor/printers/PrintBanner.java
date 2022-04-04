@@ -1,4 +1,4 @@
-package com.kreitek.refactor.mal;
+package com.kreitek.refactor.printers;
 
 public class PrintBanner {
     private String text;
