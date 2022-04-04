@@ -17,7 +17,7 @@ public class ValidateNIE implements ValidatorsInterface {
 
     @Override
     public void validate() {
-        if (SearchWrongsCharacters()) {
+        if (SearchWrongCharacters()) {
             replaceLetterWithNumber();
             checkRemainder();
         } else {
@@ -25,7 +25,7 @@ public class ValidateNIE implements ValidatorsInterface {
         }
     }
 
-    private boolean SearchWrongsCharacters() {
+    private boolean SearchWrongCharacters() {
         int i = 1;
         int caracterASCII = 0;
 
